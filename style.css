@@ -16,7 +16,7 @@ body {
 
 main {
   background-color: rgb(32, 18, 79);
-  width: 90vw;
+  width: 20rem;
   /* height: 80vh; */
   border-radius: 1rem;
   padding-bottom: 2rem;
@@ -27,27 +27,29 @@ main {
 .container > h1,
 .container > p {
   text-align: center;
-  padding-inline: 1rem;
   margin-top: 1.5rem;
 }
 
 .container > p {
   line-height: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 16px;
   color: rgb(176, 165, 199);
   text-align: center;
+  width: 75%;
 }
 
-/* .container > h1 {
-  margin-top: 1.5rem;
-} */
+.container > h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  width: 90%;
+}
 
 main .opacity {
   position: absolute;
   background-color: blueviolet;
   opacity: 0.5;
   border-radius: 1rem 1rem 0 0;
-  width: 90vw;
+  width: 100%;
   height: 15rem;
 }
 
@@ -77,22 +79,22 @@ main .opacity {
 }
 
 /* Styles for mobile devices */
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .responsive-image {
     content: url(./images/image-header-mobile.jpg);
-    width: 90vw;
+    width: 100%;
     border-radius: 1rem 1rem 0 0;
     height: 15rem;
   }
 }
 
 /* Styles for desktop devices */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .responsive-image {
     content: url(./images/image-header-desktop.jpg);
     border-radius: 0 1rem 1rem 0;
-    height: 60vh;
-    width: 40vw;
+    height: 100%;
+    width: 30rem;
     overflow: hidden;
   }
 
@@ -100,8 +102,7 @@ main .opacity {
     display: flex;
     flex-direction: row-reverse;
     padding-bottom: 0;
-    width: 80vw;
-    height: 60vh;
+    width: 60rem;
   }
 
   .deskCon {
@@ -110,8 +111,8 @@ main .opacity {
 
   main .opacity {
     position: absolute;
-    background-color: blueviolet;
-    opacity: 0.5;
+    background-color: rgb(151, 6, 134);
+    opacity: 0.4;
     border-radius: 0 1rem 1rem 0;
     right: 0;
     left: 0;
@@ -123,22 +124,11 @@ main .opacity {
 
   .container {
     display: inline-block;
-    margin-block: 5rem;
-    margin-right: 10rem;
+    padding: 3rem;
+    padding-right: 3rem;
     align-items: left;
-    width: 25rem;
-  }
-
-  .first > p,
-  .second > p,
-  .last > p {
-    text-align: left;
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
+    height: 100%;
+    width: 100%;
   }
 
   .container > h1,
@@ -149,6 +139,34 @@ main .opacity {
   }
 
   .container > h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .container > p {
+    text-align: left;
+    width: 75%;
+    font-size: 14px;
+  }
+
+  .first > p,
+  .second > p,
+  .last > p {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  footer {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 3.5rem;
+    margin-top: 2rem;
+  }
+
+  .first .lastb,
+  .second .lastb,
+  .last .lastb {
+    /* border: 1px solid; */
+    font-size: 12px;
   }
 }
