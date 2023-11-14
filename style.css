@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+/* typograpghy */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 /* body */
 
 body {
@@ -12,6 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
 main {
@@ -111,7 +115,7 @@ main .opacity {
 
   main .opacity {
     position: absolute;
-    background-color: rgb(151, 6, 134);
+    background-color: rgb(177, 13, 180);
     opacity: 0.4;
     border-radius: 0 1rem 1rem 0;
     right: 0;
